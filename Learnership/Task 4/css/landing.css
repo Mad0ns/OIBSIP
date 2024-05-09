@@ -1,0 +1,31 @@
+/* Styling for headings */
+.heading {
+    text-align: center; /* Center-aligning text */
+}
+
+/* Styling for the body */
+body {
+    width: 100%; /* Setting width to 100% */
+    height: 100vh; /* Setting height to 100 viewport height */
+    background-image: url("/images/pink.jpg"); /* Background image */
+    background-size: cover; /* Covering the entire body */
+}
+
+/* Styling for items grid */
+.items {
+    display: grid; /* Displaying as a grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    grid-column-gap: 16px; /* Setting column gap */
+    grid-row-gap: 30px; /* Setting row gap */
+    margin-top: 15px; /* Adding top margin */
+}
+
+/* Styling for item images */
+.items img {
+    width: 200px; /* Setting width of images */
+}
+
+/* Styling for h2 headings */
+h2 {
+    text-align: center; /* Center-aligning text */
+}

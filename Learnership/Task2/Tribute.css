@@ -1,0 +1,147 @@
+/* Set height of html element to 100% and hide overflow */
+html {
+    height: 100%; 
+    overflow: hidden;
+}
+
+/* Resetting default margin and padding, setting perspective for 3D transforms */
+body {
+    margin: 0;
+    padding: 0;
+    perspective: 20px; /* Define perspective for 3D transforms */
+    transform-style: preserve-3d; /* Preserve 3D transformations */
+    height: 100%; /* Set height to 100% of viewport */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set font family */
+    background-image: linear-gradient(60deg, rgb(46, 153, 13), rgb(197, 14, 14)); /* Background gradient */
+    font-size: large; /* Set default font size */
+    color: rgba(255, 255, 255, 0.774); /* Set default text color */
+}
+
+/* Styling for header section */
+header {
+    box-sizing: border-box;
+    min-height: 80vh; /* Set minimum height */
+    padding: 30vw 0 5vw; /* Set padding */
+    position: relative; /* Set position to relative */
+    transform-style: inherit; /* Inherit transform style */
+    width: 100vw; /* Set width to 100% of viewport width */
+    color: #00d9ff; /* Set text color */
+    z-index: -1; /* Set z-index */
+}
+
+/* Styling for header h1 */
+header h1 {
+    margin-top: -100px; /* Adjust margin */
+    position: sticky; /* Set position to sticky */
+}
+
+/* Styling for header and its pseudo-element */
+header, header:before {
+    background: 50% 50% / cover; /* Set background */
+}
+
+/* Styling for header pseudo-element */
+header::before {
+    bottom: 0; /* Positioning */
+    content: ""; /* Add content */
+    left: 0; /* Positioning */
+    position: absolute; /* Set position to absolute */
+    right: 0; /* Positioning */
+    top: 0; /* Positioning */
+    display: block; /* Display as block */
+    background-image: url("/images/bob.jpeg"); /* Background image */
+    background-size: cover; /* Set background size to cover */
+    transform-origin: 0 center center 0; /* Set transform origin */
+    transform: translateZ(-10px) scale(1.5); /* Apply transformation for depth and scale */
+    min-height: 93vh; /* Set minimum height */
+}
+
+/* Styling for text articles */
+.text-articles {
+    padding-top: 200px; /* Set padding */
+    font-weight: 200px; /* Set font weight */
+    letter-spacing: 0.2em; /* Set letter spacing */
+    text-align: center; /* Set text alignment */
+}
+
+/* Styling for images within text articles */
+.text-articles img {
+    float: left; /* Float image to left */
+    padding-top: 20px; /* Set padding */
+}
+
+/* Styling for header and its children */
+header * {
+    font-weight: 200px; /* Set font weight */
+    letter-spacing: 0.2em; /* Set letter spacing */
+    text-align: center; /* Set text alignment */
+    margin: 0; /* Reset margin */
+    padding: 1em 0; /* Set padding */
+}
+
+/* Styling for quote section */
+.Quote {
+    background-image: linear-gradient(90deg, rgb(0, 26, 255), rgb(0, 255, 34)); /* Set background gradient */
+    background-size: 0% 3px; /* Set initial background size */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-position: left bottom; /* Set background position */
+    transition: background-size 600ms ease; /* Add transition effect */
+}
+
+/* Styling for hover effect on quote section */
+.Quote:hover {
+    background-size: 100% 3px; /* Expand background size on hover */
+}
+
+/* Styling for rare elements */
+.rare {
+    width: 20px; /* Set width */
+    height: 20px; /* Set height */
+}
+
+/* Styling for images */
+img {
+    animation: fade-in; /* Apply fade-in animation */
+    animation-timeline: view(); /* Set animation timeline */
+    animation-range: cover; /* Set animation range */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fade-in {
+    from {
+        scale: 0.8;
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+/* Styling for section 2 */
+.section2 {
+    display: grid; /* Display as grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Define grid template columns */
+    grid-column-gap: 1px; /* Set grid column gap */
+    grid-row-gap: 1px; /* Set grid row gap */
+    margin-top: 1px; /* Set top margin */
+}
+
+/* Additional styling for section 2 */
+.section2 {
+    display: block; /* Display as block */
+    justify-content: center; /* Center content */
+    margin: auto; /* Center horizontally */
+}
+
+/* Styling for h1 within section 2 */
+.section2 h1 {
+    margin-left: 30%; /* Set left margin */
+}
+
+/* Styling for images within section 2 */
+.section2 img {
+    margin-left: 30%; /* Set left margin */
+}

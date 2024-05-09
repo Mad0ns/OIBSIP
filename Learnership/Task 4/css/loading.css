@@ -1,0 +1,34 @@
+/* Styling for the display container */
+.display {
+    display: flex; /* Displaying as flexbox */
+    align-items: center; /* Aligning items vertically */
+    justify-content: center; /* Aligning items horizontally */
+    height: 100vh; /* Setting height to 100 viewport height */
+    width: 100%; /* Setting width to 100% */
+    opacity: 0.9; /* Adding opacity to the background */
+    background: url("/images/dieHard.jpg") no-repeat; /* Background image */
+    background-size: cover; /* Covering the entire container */
+}
+
+/* Styling for the loading box */
+.load-box {
+    width: 200px; /* Setting width */
+    background-color: rgb(33, 212, 235); /* Setting background color */
+    opacity: 0.5; /* Adding opacity */
+    border-radius: 25px; /* Rounded corners */
+}
+
+/* Styling for images within the loading box */
+.load-box img {
+    border: 2px solid none; /* Removing border */
+    border-radius: 20px; /* Rounded corners */
+    margin-right: 15%; /* Adding right margin */
+    width: 200px; /* Setting width */
+}
+
+/* Styling for text within the loading box */
+.load-box p {
+    text-align: center; /* Center-aligning text */
+    color: rgb(0, 0, 0); /* Text color */
+    font-weight: bold; /* Bold font weight */
+}
